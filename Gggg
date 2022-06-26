@@ -1,0 +1,22 @@
+j="m"
+while j =="m":
+    n={1,2,3}
+    print(n)
+    while n != set():
+        m=int(input("выбирете число которое хотите удалить: "))
+        n.discard(m)  
+        print(n)
+    g=input("хотите добавить какое небудь число?: ")
+    if g=="да":
+       while g !="хочу удалить":
+           g=int(input("укажите число: "))
+           n.add(g)
+           n.discard("хочу удалить")
+           print(n)
+       while n !=set(): 
+           l=str(input("выбирете число которое хотите удалить: "))    
+           n.discard(l)
+           print(n)
+       print("пустой список: начнем все занова")
+    elif g=="нет":
+        print("конец")   
